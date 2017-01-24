@@ -1,0 +1,52 @@
+Final Project
+Taylor O'Brien
+CS 425
+
+	How to Play:
+		I created an instructions page, but with going into more detail.. 
+		Use the arrow Keys to move, space to jump and X to stun the ninjas. You are trying to get out of
+		the maze, by avoiding all robots and ninjas. The robots are protecting the key to the door, but you
+		must turn off their power before getting the key. The power button is a small yellow power button, the alarm will go off
+		when you step on it, represented by red flashing lights (shown on walls). You can stun the ninjas but that only lasts for 5
+		seconds. There is also a powerup box that will allow you to jump higher, but only for a small amount
+		of time. Be careful with the powerup though, the ninjas messed with it and there's a chance it won't
+		always work (Double jump helps!). The walls are a little sticky, so if you get stuck try backing up and try to go 
+		forward again. (To help out - the point is to get the power up, jump up on the panels to get over where the robots
+		are, turn off the power, get the key, and exit through the door). 
+	
+
+	1. I used Ogre to make a 3D prototype, and the character has an impact on the world.
+	2. Three different game states:
+		a. Normal Game Play - ninjas are moving at normal speed, robots are shooting, player can't "high jump"
+		b. Player picks up power-up and can now high jump
+		c. Player turns off power button, allowing the ninjas to move faster, and the robots are no longer shooting
+		d. the Player can stun the ninjas, for 5 seconds, causing the ninjas to change animation state and stop moving.
+	3. The ninjas, robots, are animated (the ogre is too, but you cant see that)
+	4. Elements of chance or luck: 
+		the biggest chance/luck in this game is where the ninjas move. You could have a really easy time if the ninjas are
+		not moving/don't get in your path way, since their movement is randomized. 
+	5. Levels: there are three different levels that are different, along with a start screen.
+	6. i used A* pathfinding for the ninjas. 
+	7. Physics/Collision: theres a lot of collision with the power up, power button, walls, ninjas, etc. And there is also physics
+		implemented in the character's jump.
+	8. the gui represents health, the stun cooldown timer and also shows the current level. There is also one sound used for the 
+		robots shooting.
+	9/10. I think it's pretty different from others this semester, and hopefully it is fun!
+	11. I went through and commented all of the header files to show what the variable/function does.
+	12. I included my video in the project, but it is also on youtube if that is easier: https://www.youtube.com/watch?v=s__FTGA0WPw
+		The images are in the folder
+	
+			
+	
+
+For the particle system:
+I created my own. It should work if placed in the media/particle folder with the other Examples held in that folder.
+For the music:
+I had to place the music files in the Ogre folder to get them to work: OgreDirectory/bin/debug	
+
+Bugs/Comments:
+	The walls are sticky, and the jumping is a little messed up. Both were very hard to deal with, 
+	  and I got them as close to working as I could. The ninjas also stop sometimes when not stunned (and they still hurt you) but
+	  this is due to them not being able to find a path to the node they were told to go to, and its only refreshed every 10 seconds
+	  so the game would run a tad faster. My fps is around 17-20, so I hope the game looks similar on your computer as it did on mine!
+	  Thanks for a great semester - sad I won't be having you for CS426. 

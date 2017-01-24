@@ -1,0 +1,21 @@
+5 5
+Examples/Rocky
+
+Objects
+k knot.mesh 1.7 0.0 0.02
+d dragon.mesh 5.5 0.0 0.04
+t tudorhouse.mesh 6.0 0.0 0.01
+
+Characters
+s sinbad.mesh 5.2 3
+b sinbad.mesh 5.2 1
+x robot.mesh 0.2 .005
+n ninja.mesh 0.5 1
+
+World
+ooooo
+ooooo
+ooooo
+ooooo
+ooooo
+
